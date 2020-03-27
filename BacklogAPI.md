@@ -1,7 +1,7 @@
 # [S] Backlog API
 ----
 
-Blah blah blah
+I am updating this and trying to mess up this shit.
 
 
 ## Authorization and HTTP Header Information
@@ -51,5 +51,25 @@ Returns the mobile information of the customer
 | -------- | ---------- | ----------------------- | -------------------------------------- | ------- |
 | Header | String |transactionId         | TransactionId from the preprocess leg  | 12027c4f-5146-4bfd-b563-1887104a96 |
 | Body   | String |mobileNumber          | Masked mobile number of the customer | +91770****064 |
-| Body   | String | customerCCPQToken    | Prequalified Customer Unique token | f83df477843a93be1440b95ba29127f8091bd3fad4f0f6bed7529504fa93b1a080b8a8b381548d0b36947dece006b588 |
+| Body   | String | token    | Customer Unique token | vsvdhgsvdfsdf |
 | Body   | String | firstName    | Prequalified Customer First Name | Hanabi |
+
+
+###### Successful Response
+    + Headers
+        transactionId: 12027c4f-5146-4bfd-b563-1887104a96
+
+```json
+{
+    "status": "success",
+    "code": "0",
+    "description": "Success",
+    "body": {
+        "mobileNumber": "+91770****064",
+        "customerCCPQToken": "f83df477843a93be1440b95ba29127f8091bd3fad4f0f6bed7529504fa93b1a080b8a8b381548d0b36947dece006b588",
+        "firstName": "Angela"
+    }
+}
+```
+
+---
